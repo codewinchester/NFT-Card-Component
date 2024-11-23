@@ -1,0 +1,133 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Outfit", serif;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    width: 100%;
+    height: 100vh;
+}
+
+.card-content-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1em 1em;
+    border-radius: 10px;
+    width: 350px;
+    height: 590px;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+}
+
+img{
+    border-radius: 8px;
+}
+
+.header-text h2{
+    margin-left: -7em;
+    margin-top: 1em;
+    margin-bottom: .75em;
+    color: hsl(0, 0%, 100%);
+    font-size:1.2rem;
+    letter-spacing: 0.5px;
+    line-height: 120%;
+    font-weight:500;
+}
+
+.pg-text{
+    width: 100%;
+    margin-left: .75em;
+    margin-bottom: 1em;
+    color: 	hsl(218, 29%, 66%);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.crypto-days{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: .85em;
+    margin-top: .35em;
+}
+
+.crypto{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.eth{
+    margin-left: .50em;
+    color: hsl(178, 100%, 50%);
+}
+
+.clk{
+    margin-left: .50em; 
+    color: 	hsl(218, 29%, 66%);
+}
+
+
+
+.days-time{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.line{
+    width: 310px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+hr{
+    background-color: 	hsl(218, 29%, 30%);
+    height: 0.1px; 
+    border: none;
+}
+
+.avatar-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    color: hsl(0, 0%, 100%);
+}
+
+
+.avatar-name p{
+   margin-right: 2em;
+}
+
+.crt{
+    color: 	hsl(218, 29%, 66%);
+}
+
+
+@media (min-width: 300px) and (max-width: 1000px){
+    .card-content-holder{
+        transform: scale(0.7);
+        transition: transform 0.3s ease-in-out;
+    }
+}
